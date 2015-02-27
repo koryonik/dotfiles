@@ -5,6 +5,8 @@
 - 
   link: 
     ~/.zshrc: zshrc
+    ~/.gitconfig: "gitconfig"
+    ~/.gitconfig_global: "gitconfig_global"
 
 - 
   shell: 
