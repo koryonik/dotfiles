@@ -1,0 +1,2 @@
+# Ignore Vundle plugins (managed by Vundle)
+vim/bundle
