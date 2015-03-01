@@ -7,7 +7,8 @@
 DEFAULT_USER=damien
 
 # Load zgen
-ZSHZ_PATH=$HOME/.dotfiles/zgen
+DOTFILE_PATH=$HOME/.dotfiles
+ZSHZ_PATH=$DOTFILE_PATH/zgen
 source ${ZSHZ_PATH}/zgen.zsh
 
 # check if there's no init script
@@ -24,7 +25,7 @@ if ! zgen saved; then
   #zgen oh-my-zsh plugins/tmux
 
   if [ "$OSTYPE"="darwin11.0" ]; then
-    zgen oh-my-zsh osx
+    zgen oh-my-zsh plugins/osx
   fi
 
   # Github plugins
@@ -32,6 +33,9 @@ if ! zgen saved; then
   zgen load zsh-users/zsh-syntax-highlighting
   zgen load zsh-users/zsh-completions src
   zgen load felixr/docker-zsh-completion
+
+  #Local plugins
+  zgen load $DOTFILE_PATH zsh
 
   # Load the theme  
   zgen oh-my-zsh themes/agnoster
