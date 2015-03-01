@@ -3,15 +3,14 @@ filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
+
 call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
+" Plugins to install
 Plugin 'plasticboy/vim-markdown'
-
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/syntastic'
 
@@ -19,6 +18,20 @@ Plugin 'scrooloose/syntastic'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-set number			" show line number
-set background=dark		" default terminal background
-set mouse=a                     " in most terminal emulators this works fine!
+" show line number
+set number		
+
+" default terminal background	
+set background=dark
+
+" in most terminal emulators this works fine
+set mouse=a                     
+
+" I'm prefer spaces to tabs
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+" Enable 256 colors
+set t_Co=256
+syntax on
