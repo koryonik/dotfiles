@@ -13,6 +13,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/syntastic'
+Plugin 'bling/vim-airline'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -24,7 +25,8 @@ set number
 " default terminal background	
 syntax enable
 set background=dark
-let g:solarized_termcolors=256
+"let g:solarized_termcolors=256
+let g:solarized_termtrans=1
 colorscheme solarized
 
 " Bash-style tab completion
@@ -49,3 +51,8 @@ set expandtab
 
 " Enable 256 colors
 " set t_Co=256
+
+" Airline configuration
+set laststatus=2
+let g:airline_powerline_fonts = 1
+let g:airline_theme="dark"
