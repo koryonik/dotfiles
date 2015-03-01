@@ -7,9 +7,14 @@
     ~/.zshrc: zshrc
     ~/.gitconfig: "gitconfig"
     ~/.gitconfig_global: "gitconfig_global"
+    ~/.vim: vim/
+    ~/.vimrc: vimrc
 
 - 
   shell: 
     - 
       - "git submodule update --init --recursive --remote"
       - "Installing/updating submodules"
+    -
+      - "vim +PluginInstall +qall"
+      - "Update vim bundles"
