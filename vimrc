@@ -27,8 +27,20 @@ set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
 
-" in most terminal emulators this works fine
-set mouse=a                     
+" Bash-style tab completion
+set wildmode=longest,list
+set wildmenu
+
+" Enable OS mouse clicking and scrolling
+"
+" Note for Mac OS X: Requires SIMBL and MouseTerm
+"
+" http://www.culater.net/software/SIMBL/SIMBL.php
+" https://bitheap.org/mouseterm/
+" https://github.com/mcandre/dotfiles/blob/master/.vimrc"
+if has("mouse")
+   set mouse=a
+endif
 
 " I'm prefer spaces to tabs
 set tabstop=4
