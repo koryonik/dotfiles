@@ -6,7 +6,7 @@
   link: 
     ~/.zshrc: zshrc
     ~/.gitconfig: "gitconfig"
-    ~/.gitconfig_global: "gitconfig_global"
+    ~/.gitignore_global: "gitignore_global"
     ~/.vim: vim/
     ~/.vimrc: vimrc
 
