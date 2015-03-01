@@ -31,6 +31,7 @@ if ! zgen saved; then
   zgen load rupa/z
   zgen load zsh-users/zsh-syntax-highlighting
   zgen load zsh-users/zsh-completions src
+  zgen load felixr/docker-zsh-completion
 
   # Load the theme  
   zgen oh-my-zsh themes/agnoster
