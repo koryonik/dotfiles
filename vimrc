@@ -22,7 +22,10 @@ filetype plugin indent on    " required
 set number		
 
 " default terminal background	
+syntax enable
 set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized
 
 " in most terminal emulators this works fine
 set mouse=a                     
@@ -33,5 +36,4 @@ set shiftwidth=4
 set expandtab
 
 " Enable 256 colors
-set t_Co=256
-syntax on
+" set t_Co=256
