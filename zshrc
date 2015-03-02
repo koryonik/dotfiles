@@ -35,7 +35,7 @@ if ! zgen saved; then
   zgen load felixr/docker-zsh-completion
 
   #Local plugins
-  zgen load $DOTFILE_PATH zsh
+  #zgen load $DOTFILE_PATH/ zsh
 
   # Load the theme  
   zgen oh-my-zsh themes/agnoster
@@ -43,6 +43,10 @@ if ! zgen saved; then
   # Tell antigen that you're done
   zgen save
 fi
+
+#Local plugins
+source $DOTFILE_PATH/zsh/docker.aliases.zsh
+source $DOTFILE_PATH/zsh/misc.aliases.zsh
 
 # Load specific machine zshrc configuration
 if [ -f ~/.zshrc_local ]; then
