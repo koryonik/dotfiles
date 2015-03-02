@@ -42,3 +42,6 @@
     autocrlf = input
     excludesfile = ~/.gitignore_global
     editor = vim
+
+[include]
+    path = ~/.gitconfig_local
