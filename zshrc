@@ -46,6 +46,7 @@ fi
 
 #Local plugins
 source $DOTFILE_PATH/zsh/docker.aliases.zsh
+source $DOTFILE_PATH/zsh/misc.functions.zsh
 source $DOTFILE_PATH/zsh/misc.aliases.zsh
 
 # Load specific machine zshrc configuration
